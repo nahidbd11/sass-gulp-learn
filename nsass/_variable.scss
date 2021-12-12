@@ -1,0 +1,86 @@
+@use "sass:math"; // to use math library we need to import sass:math
+@use "sass:color";
+//colors
+$primary: rgb(34, 127, 202);
+$secondary: rgb(80, 78, 78);
+$error: red;
+$warning: #ffda09;
+$light: white;
+$dark: black;
+
+$bg-primary: rgb(250, 244, 244);
+
+$theme-color: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "error": $error,
+  "warning": $warning,
+  "light": $light,
+  "dark": $dark,
+);
+
+$lists: bg, text;
+@each $name, $value in $theme-color {
+  // @each $className in $lists {
+  //   .#{$className}-#{$name} {
+  //     @if ($className== "bg") {
+  //       background-color: $value;
+  //     } @else {
+  //       color: $value;
+  //     }
+  //   }
+  // }
+
+  .text-#{$name} {
+    color: $value;
+  }
+  .bg-#{$name} {
+    background-color: $value;
+  }
+
+  @for $i from 1 through 4 {
+    @if ($value !=black and $value!=white) {
+      //for light color
+      .text-#{$name}-light-#{$i} {
+        // color: lighten($value, $i * 10%); //or use mix func or use lighten func
+        // color:mix(white,$value,$i*10%);
+        color: adjust-color($value, $lightness: $i * 10%);
+      }
+      .bg-#{$name}-light-#{$i} {
+        background-color: adjust-color($value, $lightness: $i * 10%);
+      }
+      //TODO:for darker color
+      .text-#{$name}-dark-#{$i} {
+        // color:darken($value, $i * 10%); //or use mix func or use lighten func
+        // color:mix(black,$value,$i*10%);
+        color: adjust-color($value, $blackness: $i * 10%);
+      }
+      .bg-#{$name}-dark-#{$i} {
+        background-color: adjust-color($value, $blackness: $i * 10%);
+      }
+    }
+  }
+}
+//border-radius
+$base-border-radius: 20px;
+
+//default padding and margin
+$base-padding: 0.75rem !default;
+$base-margin: 0.75rem !default;
+//font-size
+$base-font-size: 1em;
+$fs-sm: $base-font-size * 0.75;
+$fs-md: $base-font-size;
+$fs-lg: $base-font-size * 1.5;
+$fs-xl: $base-font-size * 2;
+$fs-xxl: $base-font-size * 3;
+
+@debug math.max(10px, 30px, 25px, 5px); //it will just console
+@debug math.$pi;
+@debug math.$e;
+@debug math.compatible(2px, 10em); //false
+@debug math.compatible(2px, 10px); //true
+@debug math.unit(2px+10px); //px
+@debug math.is-unitless(10); //true
+@debug math.is-unitless(10px); //false
+@debug math.percentage(0.2); //20%

@@ -1,0 +1,21 @@
+@use "sass:math";
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 40%;
+  padding: $base-padding;
+  margin: $base-margin;
+  border-radius: math.div($base-border-radius, 4);
+  .card-title {
+    font-size: $fs-lg;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-bottom: $base-margin;
+  }
+  .card-body {
+    margin-top: $base-margin;
+    .card-link {
+      text-decoration: underline;
+      font-size: $base-font-size;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+//variable & functions
+@import "variable";
+
+// base style and layouts
+@import "base";
+
+//color
+
+//components(card,navbar...)
+@import "./components/card";
+//utilities
+body {
+  background-color: $bg-primary;
+}
+h1 {
+  color: map-get($theme-color, "dark");
+}

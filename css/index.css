@@ -1,3 +1,354 @@
-body {
+.text-primary {
+  color: #227fca;
+}
+
+.bg-primary {
+  background-color: #227fca;
+}
+
+.text-primary-light-1 {
+  color: #4098df;
+}
+
+.bg-primary-light-1 {
+  background-color: #4098df;
+}
+
+.text-primary-dark-1 {
+  color: #2271b1;
+}
+
+.bg-primary-dark-1 {
+  background-color: #2271b1;
+}
+
+.text-primary-light-2 {
+  color: #6cb0e6;
+}
+
+.bg-primary-light-2 {
+  background-color: #6cb0e6;
+}
+
+.text-primary-dark-2 {
+  color: #226397;
+}
+
+.bg-primary-dark-2 {
+  background-color: #226397;
+}
+
+.text-primary-light-3 {
+  color: #97c7ee;
+}
+
+.bg-primary-light-3 {
+  background-color: #97c7ee;
+}
+
+.text-primary-dark-3 {
+  color: #22557e;
+}
+
+.bg-primary-dark-3 {
+  background-color: #22557e;
+}
+
+.text-primary-light-4 {
+  color: #c3dff5;
+}
+
+.bg-primary-light-4 {
+  background-color: #c3dff5;
+}
+
+.text-primary-dark-4 {
+  color: #224764;
+}
+
+.bg-primary-dark-4 {
+  background-color: #224764;
+}
+
+.text-secondary {
+  color: #504e4e;
+}
+
+.bg-secondary {
+  background-color: #504e4e;
+}
+
+.text-secondary-light-1 {
+  color: #6a6767;
+}
+
+.bg-secondary-light-1 {
+  background-color: #6a6767;
+}
+
+.text-secondary-dark-1 {
+  color: #474747;
+}
+
+.bg-secondary-dark-1 {
+  background-color: #474747;
+}
+
+.text-secondary-light-2 {
+  color: #848080;
+}
+
+.bg-secondary-light-2 {
+  background-color: #848080;
+}
+
+.text-secondary-dark-2 {
+  color: #414141;
+}
+
+.bg-secondary-dark-2 {
+  background-color: #414141;
+}
+
+.text-secondary-light-3 {
+  color: #9d9a9a;
+}
+
+.bg-secondary-light-3 {
+  background-color: #9d9a9a;
+}
+
+.text-secondary-dark-3 {
+  color: #3c3c3c;
+}
+
+.bg-secondary-dark-3 {
+  background-color: #3c3c3c;
+}
+
+.text-secondary-light-4 {
+  color: #b6b4b4;
+}
+
+.bg-secondary-light-4 {
+  background-color: #b6b4b4;
+}
+
+.text-secondary-dark-4 {
+  color: #3c3c3c;
+}
+
+.bg-secondary-dark-4 {
+  background-color: #3c3c3c;
+}
+
+.text-error {
   color: red;
+}
+
+.bg-error {
+  background-color: red;
+}
+
+.text-error-light-1 {
+  color: #ff3333;
+}
+
+.bg-error-light-1 {
+  background-color: #ff3333;
+}
+
+.text-error-dark-1 {
+  color: #e60000;
+}
+
+.bg-error-dark-1 {
+  background-color: #e60000;
+}
+
+.text-error-light-2 {
+  color: #ff6666;
+}
+
+.bg-error-light-2 {
+  background-color: #ff6666;
+}
+
+.text-error-dark-2 {
+  color: #cc0000;
+}
+
+.bg-error-dark-2 {
+  background-color: #cc0000;
+}
+
+.text-error-light-3 {
+  color: #ff9999;
+}
+
+.bg-error-light-3 {
+  background-color: #ff9999;
+}
+
+.text-error-dark-3 {
+  color: #b30000;
+}
+
+.bg-error-dark-3 {
+  background-color: #b30000;
+}
+
+.text-error-light-4 {
+  color: #ffcccc;
+}
+
+.bg-error-light-4 {
+  background-color: #ffcccc;
+}
+
+.text-error-dark-4 {
+  color: #990000;
+}
+
+.bg-error-dark-4 {
+  background-color: #990000;
+}
+
+.text-warning {
+  color: #ffda09;
+}
+
+.bg-warning {
+  background-color: #ffda09;
+}
+
+.text-warning-light-1 {
+  color: #ffe23c;
+}
+
+.bg-warning-light-1 {
+  background-color: #ffe23c;
+}
+
+.text-warning-dark-1 {
+  color: #e6c409;
+}
+
+.bg-warning-dark-1 {
+  background-color: #e6c409;
+}
+
+.text-warning-light-2 {
+  color: #ffe96f;
+}
+
+.bg-warning-light-2 {
+  background-color: #ffe96f;
+}
+
+.text-warning-dark-2 {
+  color: #ccaf09;
+}
+
+.bg-warning-dark-2 {
+  background-color: #ccaf09;
+}
+
+.text-warning-light-3 {
+  color: #fff1a2;
+}
+
+.bg-warning-light-3 {
+  background-color: #fff1a2;
+}
+
+.text-warning-dark-3 {
+  color: #b39909;
+}
+
+.bg-warning-dark-3 {
+  background-color: #b39909;
+}
+
+.text-warning-light-4 {
+  color: #fff9d5;
+}
+
+.bg-warning-light-4 {
+  background-color: #fff9d5;
+}
+
+.text-warning-dark-4 {
+  color: #998309;
+}
+
+.bg-warning-dark-4 {
+  background-color: #998309;
+}
+
+.text-light {
+  color: white;
+}
+
+.bg-light {
+  background-color: white;
+}
+
+.text-dark {
+  color: black;
+}
+
+.bg-dark {
+  background-color: black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+hr {
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 40%;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  border-radius: 5px;
+}
+.card .card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding-bottom: 0.75rem;
+}
+.card .card-body {
+  margin-top: 0.75rem;
+}
+.card .card-body .card-link {
+  text-decoration: underline;
+  font-size: 1em;
+}
+
+body {
+  background-color: #faf4f4;
+}
+
+h1 {
+  color: black;
 }
