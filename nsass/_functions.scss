@@ -1,0 +1,4 @@
+@function complement-col($col) {
+  $complement: complement($col);
+  @return lighten($complement, 35%);
+}

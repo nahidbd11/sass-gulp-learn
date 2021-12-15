@@ -1,0 +1,32 @@
+@mixin btn($btn-col: white) {
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  border-radius: $base-border-radius * 0.5;
+  background-color: $btn-col;
+  padding: $base-padding;
+  text-transform: capitalize;
+}
+
+.btn {
+  @include btn;
+}
+
+@each $name, $val in $theme-color {
+  .btn-#{$name} {
+    @include btn($val);
+    color: complement-col($val);
+    &:hover {
+      background-color: complement-col($val);
+      color: $val;
+    }
+  }
+
+  .btn-outline-#{$name} {
+    @include btn(white);
+    border: 1px solid $val;
+    &:hover {
+      background-color: $val;
+    }
+  }
+}

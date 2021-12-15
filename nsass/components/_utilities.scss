@@ -1,0 +1,31 @@
+$utilities: (
+  "font-size": (
+    "prefix": "fs",
+    "values": (
+      "sm": $fs-sm,
+      "md": $fs-md,
+      "lg": $fs-lg,
+      "xl": $fs-xl,
+      "xxl": $fs-xxl,
+    ),
+  ),
+  "margin": (
+    "prefix": "m",
+    "values": (
+      "0": 0,
+      "1": 0.5rem,
+      "2": 0.75rem,
+      "3": 1rem,
+    ),
+  ),
+);
+
+@each $property, $map in $utilities {
+  $prefix: map-get($map, "prefix");
+  $valmap: map-get($map, "values");
+  @each $k, $v in $valmap {
+    .#{$prefix}-#{$k} {
+      #{$property}: $v;
+    }
+  }
+} ;

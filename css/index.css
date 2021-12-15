@@ -2,6 +2,10 @@
   color: #227fca;
 }
 
+.text-hover-primary:hover {
+  color: #227fca;
+}
+
 .bg-primary {
   background-color: #227fca;
 }
@@ -71,6 +75,10 @@
 }
 
 .text-secondary {
+  color: #504e4e;
+}
+
+.text-hover-secondary:hover {
   color: #504e4e;
 }
 
@@ -146,6 +154,10 @@
   color: red;
 }
 
+.text-hover-error:hover {
+  color: red;
+}
+
 .bg-error {
   background-color: red;
 }
@@ -215,6 +227,10 @@
 }
 
 .text-warning {
+  color: #ffda09;
+}
+
+.text-hover-warning:hover {
   color: #ffda09;
 }
 
@@ -290,11 +306,19 @@
   color: white;
 }
 
+.text-hover-light:hover {
+  color: white;
+}
+
 .bg-light {
   background-color: white;
 }
 
 .text-dark {
+  color: black;
+}
+
+.text-hover-dark:hover {
   color: black;
 }
 
@@ -343,6 +367,226 @@ a {
 .card .card-body .card-link {
   text-decoration: underline;
   font-size: 1em;
+}
+
+.btn {
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: white;
+  padding: 0.75rem;
+  text-transform: capitalize;
+}
+
+.btn-primary {
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #227fca;
+  padding: 0.75rem;
+  text-transform: capitalize;
+  color: #f1ccad;
+}
+.btn-primary:hover {
+  background-color: #f1ccad;
+  color: #227fca;
+}
+
+.btn-outline-primary {
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: white;
+  padding: 0.75rem;
+  text-transform: capitalize;
+  border: 1px solid #227fca;
+}
+.btn-outline-primary:hover {
+  background-color: #227fca;
+}
+
+.btn-secondary {
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #504e4e;
+  padding: 0.75rem;
+  text-transform: capitalize;
+  color: #a7a9a9;
+}
+.btn-secondary:hover {
+  background-color: #a7a9a9;
+  color: #504e4e;
+}
+
+.btn-outline-secondary {
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: white;
+  padding: 0.75rem;
+  text-transform: capitalize;
+  border: 1px solid #504e4e;
+}
+.btn-outline-secondary:hover {
+  background-color: #504e4e;
+}
+
+.btn-error {
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: red;
+  padding: 0.75rem;
+  text-transform: capitalize;
+  color: #b3ffff;
+}
+.btn-error:hover {
+  background-color: #b3ffff;
+  color: red;
+}
+
+.btn-outline-error {
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: white;
+  padding: 0.75rem;
+  text-transform: capitalize;
+  border: 1px solid red;
+}
+.btn-outline-error:hover {
+  background-color: red;
+}
+
+.btn-warning {
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #ffda09;
+  padding: 0.75rem;
+  text-transform: capitalize;
+  color: #bcc6ff;
+}
+.btn-warning:hover {
+  background-color: #bcc6ff;
+  color: #ffda09;
+}
+
+.btn-outline-warning {
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: white;
+  padding: 0.75rem;
+  text-transform: capitalize;
+  border: 1px solid #ffda09;
+}
+.btn-outline-warning:hover {
+  background-color: #ffda09;
+}
+
+.btn-light {
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: white;
+  padding: 0.75rem;
+  text-transform: capitalize;
+  color: white;
+}
+.btn-light:hover {
+  background-color: white;
+  color: white;
+}
+
+.btn-outline-light {
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: white;
+  padding: 0.75rem;
+  text-transform: capitalize;
+  border: 1px solid white;
+}
+.btn-outline-light:hover {
+  background-color: white;
+}
+
+.btn-dark {
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: black;
+  padding: 0.75rem;
+  text-transform: capitalize;
+  color: #595959;
+}
+.btn-dark:hover {
+  background-color: #595959;
+  color: black;
+}
+
+.btn-outline-dark {
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: white;
+  padding: 0.75rem;
+  text-transform: capitalize;
+  border: 1px solid black;
+}
+.btn-outline-dark:hover {
+  background-color: black;
+}
+
+.fs-sm {
+  font-size: 0.75em;
+}
+
+.fs-md {
+  font-size: 1em;
+}
+
+.fs-lg {
+  font-size: 1.5em;
+}
+
+.fs-xl {
+  font-size: 2em;
+}
+
+.fs-xxl {
+  font-size: 3em;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-1 {
+  margin: 0.5rem;
+}
+
+.m-2 {
+  margin: 0.75rem;
+}
+
+.m-3 {
+  margin: 1rem;
 }
 
 body {

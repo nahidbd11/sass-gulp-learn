@@ -34,6 +34,11 @@ $lists: bg, text;
   .text-#{$name} {
     color: $value;
   }
+  .text-hover-#{$name} {
+    &:hover {
+      color: $value;
+    }
+  }
   .bg-#{$name} {
     background-color: $value;
   }
@@ -46,6 +51,7 @@ $lists: bg, text;
         // color:mix(white,$value,$i*10%);
         color: adjust-color($value, $lightness: $i * 10%);
       }
+
       .bg-#{$name}-light-#{$i} {
         background-color: adjust-color($value, $lightness: $i * 10%);
       }

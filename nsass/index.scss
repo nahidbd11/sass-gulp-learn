@@ -1,4 +1,5 @@
 //variable & functions
+@import "functions";
 @import "variable";
 
 // base style and layouts
@@ -8,7 +9,10 @@
 
 //components(card,navbar...)
 @import "./components/card";
+@import "./components/button";
+
 //utilities
+@import "./components/utilities";
 body {
   background-color: $bg-primary;
 }
