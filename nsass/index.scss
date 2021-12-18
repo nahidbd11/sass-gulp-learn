@@ -4,9 +4,9 @@
 
 // base style and layouts
 @import "base";
-
+@import "breakpoints";
+@import "grid";
 //color
-
 //components(card,navbar...)
 @import "./components/card";
 @import "./components/button";

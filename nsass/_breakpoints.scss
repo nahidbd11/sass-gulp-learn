@@ -1,0 +1,46 @@
+$breackpoints: (
+  "xs": 0,
+  "sm": 480px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1200px,
+);
+
+@mixin xs {
+  @media screen and (min-width: map-get($breackpoints,"xs")) {
+    @content;
+  }
+}
+@mixin sm {
+  @media screen and (min-width: map-get($breackpoints,"sm")) {
+    @content;
+  }
+}
+@mixin md {
+  @media screen and (min-width: map-get($breackpoints,"md")) {
+    @content;
+  }
+}
+@mixin lg {
+  @media screen and (min-width: map-get($breackpoints,"lg")) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (min-width: map-get($breackpoints,"xl")) {
+    @content;
+  }
+}
+
+.res-test {
+  @include xs {
+    color: red;
+  }
+  @include md {
+    color: green;
+  }
+  @include lg {
+    color: blue;
+  }
+}

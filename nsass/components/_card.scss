@@ -1,9 +1,10 @@
 @use "sass:math";
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 40%;
+  width: 100%;
   padding: $base-padding;
   margin: $base-margin;
+  box-sizing: border-box;
   border-radius: math.div($base-border-radius, 4);
   .card-title {
     font-size: $fs-lg;
