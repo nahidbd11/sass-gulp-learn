@@ -13,7 +13,31 @@ $grid-columns: 12;
   display: flex;
   flex-flow: row wrap;
 }
+$gaps: (
+  "0": 0,
+  "1": 10px,
+  "2": 20px,
+  "3": 30px,
+);
 
+//for gap beetween the grid element
+@each $g, $v in $gaps {
+  .gap-#{$g} > * {
+    padding: $v;
+  }
+  .gap-#{$g} {
+    margin-left: -$v;
+    margin-right: -$v;
+  }
+}
+//for justify-content of grid
+$justify-contents: flex-start, flex-end, center, space-between, space-around,
+  space-evenly;
+@each $justify-val in $justify-contents {
+  .justify-#{$justify-val} {
+    justify-content: $justify-val;
+  }
+}
 //for xs
 @include xs {
   @for $i from 1 through $grid-columns {

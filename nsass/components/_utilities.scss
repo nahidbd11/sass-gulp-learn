@@ -18,6 +18,24 @@ $utilities: (
       "3": 1rem,
     ),
   ),
+  "margin-bottom": (
+    "prefix": "mb",
+    "values": (
+      "0": 0,
+      "1": 0.5rem,
+      "2": 0.75rem,
+      "3": 1rem,
+    ),
+  ),
+  "margin-left": (
+    "prefix": "ms",
+    "values": (
+      "0": 0,
+      "1": 0.5rem,
+      "2": 0.75rem,
+      "3": 1rem,
+    ),
+  ),
 );
 
 @each $property, $map in $utilities {

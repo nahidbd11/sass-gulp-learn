@@ -7,7 +7,9 @@ $error: red;
 $warning: #ffda09;
 $light: white;
 $dark: black;
-
+$success: rgb(35, 148, 35);
+$green: #008f7a;
+$dark-blue: #265667;
 $bg-primary: rgb(250, 244, 244);
 
 $theme-color: (
@@ -17,6 +19,9 @@ $theme-color: (
   "warning": $warning,
   "light": $light,
   "dark": $dark,
+  "success": $success,
+  "blue-dark": $dark-blue,
+  "green": $green,
 );
 
 $lists: bg, text;
