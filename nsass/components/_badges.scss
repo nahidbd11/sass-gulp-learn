@@ -1,0 +1,15 @@
+@mixin badge($bg-col: rgb(40, 247, 40)) {
+  background-color: $bg-col;
+  border-radius: $base-border-radius * 10;
+  font-size: $fs-sm;
+  padding: 5px;
+}
+.badge {
+  @include badge;
+}
+
+@each $col, $val in $theme-color {
+  .badge-#{$col} {
+    @include badge($val);
+  }
+}

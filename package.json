@@ -11,6 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-css-purge": "^3.0.9",
+    "gulp-purgecss": "^4.1.3",
     "gulp-sass": "^5.0.0",
     "sass": "^1.44.0"
   },

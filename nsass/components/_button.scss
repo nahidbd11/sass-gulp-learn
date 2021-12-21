@@ -16,10 +16,10 @@
   .btn-#{$name} {
     @include btn($val);
     // color: complement-col($val);
-    &:hover {
-      background-color: complement-col($val);
-      color: $val;
-    }
+    // &:hover {
+    //   background-color: complement-col($val);
+    //   color: $val;
+    // }
   }
 
   .btn-outline-#{$name} {

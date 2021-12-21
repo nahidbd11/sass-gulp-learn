@@ -1,16 +1,16 @@
 @use "sass:math"; // to use math library we need to import sass:math
 @use "sass:color";
 //colors
-$primary: rgb(34, 127, 202);
-$secondary: rgb(80, 78, 78);
-$error: red;
-$warning: #ffda09;
-$light: white;
-$dark: black;
-$success: #00c9a7;
-$green: #00b877;
-$dark-blue: #265667;
-$bg-primary: rgb(250, 244, 244);
+$primary: rgb(34, 127, 202) !default;
+$secondary: rgb(80, 78, 78) !default;
+$error: red !default;
+$warning: #ffda09 !default;
+$light: white !default;
+$dark: black !default;
+$success: #00c9a7 !default;
+$green: #00b877 !default;
+$dark-blue: #265667 !default;
+$bg-primary: rgb(250, 244, 244) !default;
 
 $theme-color: (
   "primary": $primary,
@@ -73,13 +73,13 @@ $lists: bg, text;
   }
 }
 //border-radius
-$base-border-radius: 20px;
+$base-border-radius: 20px !default;
 
 //default padding and margin
 $base-padding: 0.75rem !default;
 $base-margin: 0.75rem !default;
 //font-size
-$base-font-size: 1.01rem;
+$base-font-size: 1.01rem !default;
 $fs-sm: $base-font-size * 0.75;
 $fs-md: $base-font-size * 0.9;
 $fs-lg: $base-font-size * 1.2;
